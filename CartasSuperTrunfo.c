@@ -20,14 +20,13 @@ int main() {
     printf("Carta 1\n");
 
     printf("Digite a letra inicial do estado:\n");
-    scanf("%s", Estado);
+    scanf("%s", &Estado);
 
     printf("Digite a cidade:\n");
-    fgets(Cidade, 30, stdin);
-    Cidade[strcspn(Cidade, "\n")] = '\0'; 
+    scanf("%s", &Cidade);
 
     printf("Digite o codigo da carta:\n");
-    scanf("%s", CodigoDaCarta);
+    scanf("%s", &CodigoDaCarta);
     
     printf("Digite a populacao da cidade:\n");
     scanf("%lu",  &Populacao);
@@ -62,14 +61,13 @@ int main() {
     printf("Carta 2\n");
 
     printf("Digite a letra inicial do estado:\n");
-    scanf("%s", Estado2);
+    scanf("%s", &Estado2);
 
     printf("Digite a cidade:\n");
-    fgets(Cidade2, 30, stdin);
-    Cidade2[strcspn(Cidade2, "\n")] = '\0'; 
+    scanf("%s", &Cidade2);
 
     printf("Digite o codigo da carta:\n");
-    scanf("%s", CodigoDaCarta2);
+    scanf("%s", &CodigoDaCarta2);
 
     printf("Digite a populacao da cidade:\n");
     scanf("%lu",  &Populacao2);
